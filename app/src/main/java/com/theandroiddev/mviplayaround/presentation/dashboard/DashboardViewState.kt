@@ -1,0 +1,3 @@
+package com.theandroiddev.mviplayaround.presentation.dashboard
+
+class DashboardViewState
