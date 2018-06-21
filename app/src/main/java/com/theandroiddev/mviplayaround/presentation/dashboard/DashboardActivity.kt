@@ -1,17 +1,18 @@
 package com.theandroiddev.mviplayaround.presentation.dashboard
 
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import com.theandroiddev.mviplayaround.R
 import com.theandroiddev.mviplayaround.mvi.MviDaggerAppCompatActivity
-import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : MviDaggerAppCompatActivity<DashboardView, DashboardPresenter>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+        val toolbar = findViewById<Toolbar>(R.id.dashboard_toolbar)
         setSupportActionBar(toolbar)
 
     }
@@ -26,4 +27,5 @@ class DashboardActivity : MviDaggerAppCompatActivity<DashboardView, DashboardPre
                 R.id.dashboard_action_settings -> true
                 else -> super.onOptionsItemSelected(item)
             }
+
 }
