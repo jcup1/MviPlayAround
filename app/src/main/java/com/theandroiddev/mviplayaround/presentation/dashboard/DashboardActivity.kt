@@ -5,15 +5,22 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import com.theandroiddev.mviplayaround.R
+import com.theandroiddev.mviplayaround.extension.inTransaction
 import com.theandroiddev.mviplayaround.mvi.MviDaggerAppCompatActivity
+import com.theandroiddev.mviplayaround.presentation.sign_in.SignInFragment
 
-class DashboardActivity : MviDaggerAppCompatActivity<DashboardView, DashboardPresenter>() {
+class DashboardActivity : MviDaggerAppCompatActivity<DashboardView, DashboardPresenter>(),
+        DashboardView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         val toolbar = findViewById<Toolbar>(R.id.dashboard_toolbar)
         setSupportActionBar(toolbar)
+
+        supportFragmentManager.inTransaction {
+            add(R.id.dashboard_frame_layout, SignInFragment())
+        }
 
     }
 

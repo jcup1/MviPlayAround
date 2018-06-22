@@ -4,6 +4,7 @@ import android.app.Application
 import com.theandroiddev.mviplayaround.di.module.ActivityBuildersModule
 import com.theandroiddev.mviplayaround.di.module.AppModule
 import com.theandroiddev.mviplayaround.di.module.FragmentBuildersModule
+import com.theandroiddev.mviplayaround.di.module.ServiceModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -17,7 +18,8 @@ import javax.inject.Singleton
             (AndroidSupportInjectionModule::class),
             (AppModule::class),
             (ActivityBuildersModule::class),
-            (FragmentBuildersModule::class)
+            (FragmentBuildersModule::class),
+            (ServiceModule::class)
         ]
 )
 interface AppComponent : AndroidInjector<DaggerApplication> {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.sign_in.SignInFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sign_in_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/sign_in_with_google_button"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/sign_in_with_google" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
