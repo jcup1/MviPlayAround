@@ -68,7 +68,14 @@ dependencies {
 
     //Mockito
     testImplementation "org.mockito:mockito-core:2.19.0"
+    testImplementation 'org.jetbrains.spek:spek-junit-platform-engine:1.1.0-beta3'
+    testImplementation 'org.junit.platform:junit-platform-runner:1.0.3'
 
+    //Spek
+    testCompile 'org.jetbrains.spek:spek-api:1.1.0-beta3'
+
+
+    //JUnit5
     testImplementation junit5.unitTests()
     testImplementation junit5.parameterized()
     androidTestImplementation junit5.instrumentationTests()
