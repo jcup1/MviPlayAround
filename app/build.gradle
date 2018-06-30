@@ -59,9 +59,8 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:2.14.1"
 
     //Firebase
-    implementation 'com.google.firebase:firebase-firestore:17.0.1'
+    implementation 'com.google.firebase:firebase-firestore:16.0.0'
     implementation 'com.google.firebase:firebase-auth:16.0.2'
-    implementation 'com.google.android.gms:play-services-auth:15.0.1'
 
     //Google sign in
     implementation 'com.google.android.gms:play-services-auth:15.0.1'
@@ -72,7 +71,7 @@ dependencies {
     testImplementation 'org.junit.platform:junit-platform-runner:1.0.3'
 
     //Spek
-    testCompile 'org.jetbrains.spek:spek-api:1.1.0-beta3'
+    testImplementation 'org.jetbrains.spek:spek-api:1.1.0-beta3'
 
 
     //JUnit5
